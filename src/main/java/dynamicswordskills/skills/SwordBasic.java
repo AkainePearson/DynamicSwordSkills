@@ -130,7 +130,7 @@ public class SwordBasic extends SkillActive implements IComboSkill, ILockOnTarge
 
 	/** Returns amount of time allowed between successful attacks before combo terminates */
 	private final int getComboTimeLimit() {
-		return (20 + (level * 2));
+		return (20 + (level * 6));
 	}
 
 	/** Returns the max combo size attainable (2 plus skill level) */
