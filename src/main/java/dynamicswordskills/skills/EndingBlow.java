@@ -113,7 +113,7 @@ public class EndingBlow extends SkillActive
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void addInformation(List<String> desc, EntityPlayer player) {
-		desc.add(getDamageDisplay(level * 20, true) + "%");
+		desc.add(getDamageDisplay(level * 75, true) + "%");
 		desc.add(getDurationDisplay(getDuration(), true));
 		desc.add(getExhaustionDisplay(getExhaustion()));
 	}
@@ -130,7 +130,7 @@ public class EndingBlow extends SkillActive
 
 	/** Returns the duration of the defense down effect */
 	public int getDuration() {
-		return 45 - (level * 5);
+		return 60 - (level * 2);
 	}
 
 	/** Returns the {@link #lastActivationTime} */
